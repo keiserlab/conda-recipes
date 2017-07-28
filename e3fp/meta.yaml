@@ -1,0 +1,50 @@
+package:
+  name: e3fp
+  version: "1.1"
+
+source:
+  fn: e3fp-{{ PKG_VERSION }}.tar.gz
+  url: https://pypi.python.org/packages/b7/98/6aa089cec611de8547fe19457a2bb077a4664f35979c4288d69e4d92bb20/e3fp-{{ PKG_VERSION }}.tar.gz
+  md5: 391f5c5084c4c7dcff5759d38fbcf24d
+
+build:
+  number: 0
+  script:
+    - source activate "${CONDA_DEFAULT_ENV}"  # [unix]
+    - python setup.py build_ext --inplace
+    - python setup.py install --single-version-externally-managed --record record.txt
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - scipy >=0.18.0
+    - numpy >=1.11.3
+    - mmh3 >=2.3.1
+    - sdaxen_python_utilities >=0.1.4
+
+  run:
+    - python
+    - scipy >=0.18.0
+    - numpy >=1.11.3
+    - mmh3 >=2.3.1
+    - sdaxen_python_utilities >=0.1.4
+    - rdkit >=2016.03.4
+
+test:
+  imports:
+    - e3fp
+    - e3fp.config
+    - e3fp.conformer
+    - e3fp.fingerprint
+    - e3fp.test
+
+  requires:
+    - mock
+    - nose
+
+about:
+  home: https://github.com/keiserlab/e3fp
+  license: GNU Lesser General Public License v3 (LGPLv3)
+  summary: 'Molecular 3D fingerprinting'
+  license_family: Public-Domain
