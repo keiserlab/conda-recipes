@@ -1,0 +1,27 @@
+package:
+  name: mmh3
+  version: "2.4"
+
+source:
+  fn: mmh3-{{ PKG_VERSION }}.tar.gz
+  url: https://pypi.python.org/packages/c7/9f/4e97cfdeb5aa486531d804e8eafb42822a9d036ab86849a21603ad098dbb/mmh3-{{ PKG_VERSION }}.tar.gz
+  md5: 86bb3f4cd0ce4a934d0216348586249b
+
+build:
+  number: 0
+  script:
+    - python setup.py install
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+about:
+  home: http://packages.python.org/mmh3
+  license: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+  summary: 'Python library for MurmurHash (MurmurHash3), a set of fast and robust hash functions.'
+  license_family: OTHER
