@@ -47,3 +47,5 @@ about:
     Extended 3-Dimensional FingerPrint (E3FP) is a 3D molecular fingerprinting
     method inspired by Extended Connectivity FingerPrints (ECFP), integrating
     tightly with the RDKit.
+  doc_url: http://e3fp.readthedocs.io/en/latest/
+  dev_url: https://github.com/keiserlab/e3fp
