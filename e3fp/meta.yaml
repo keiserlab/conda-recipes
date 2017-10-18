@@ -1,6 +1,6 @@
 package:
   name: e3fp
-  version: "1.1"
+  version: 1.1
 
 source:
   fn: e3fp-{{ PKG_VERSION }}.tar.gz
@@ -40,6 +40,6 @@ test:
 
 about:
   home: https://github.com/keiserlab/e3fp
-  summary: 'Molecular 3D fingerprinting'
   license: LGPLv3
   license_file: LICENSE.txt
+  summary: Molecular 3D fingerprinting
