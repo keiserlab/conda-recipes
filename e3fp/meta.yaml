@@ -43,3 +43,7 @@ about:
   license: LGPLv3
   license_file: LICENSE.txt
   summary: Molecular 3D fingerprinting
+  description: |
+    Extended 3-Dimensional FingerPrint (E3FP) is a 3D molecular fingerprinting
+    method inspired by Extended Connectivity FingerPrints (ECFP), integrating
+    tightly with the RDKit.
