@@ -40,6 +40,6 @@ test:
 
 about:
   home: https://github.com/keiserlab/e3fp
-  license: GNU Lesser General Public License v3 (LGPLv3)
   summary: 'Molecular 3D fingerprinting'
-  license_family: Public-Domain
+  license: LGPLv3
+  license_file: LICENSE.txt
