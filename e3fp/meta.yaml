@@ -37,11 +37,6 @@ test:
     - e3fp.config
     - e3fp.conformer
     - e3fp.fingerprint
-    - e3fp.test
-
-  requires:
-    - mock
-    - nose
 
 about:
   home: https://github.com/keiserlab/e3fp
